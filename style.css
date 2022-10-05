@@ -12,10 +12,12 @@
 
 html{
     font-size: 62.5%;
+    /*height: 100%;*/ /*Pour Sticky si non fonctionnel*/
 }
 
 
 body{
+    min-height: 100vh;
     background-color: #e0dddd;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
@@ -32,7 +34,6 @@ header.header-flex{
     top: 0;
     left: 0;
     right: 0;
-    
     border-bottom: 1px solid white;
 }
 
@@ -45,7 +46,7 @@ header .title{
     font-size: calc(1.4rem + 3vw);
     font-family: 'Kalam', cursive;
     color: #fff;
-    text-shadow: 0 7px 10px black;
+    text-shadow: 0 7px 10px #000;
 }
 
 header .title .min-size{
@@ -183,6 +184,40 @@ section.search{
     color: #fff;
     font-size: 2rem;
 }
+
+
+/* **** Footer **** */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    color:#fff;
+    font-size: 1.4rem;
+    top: 100vh;
+    height: calc(2.5rem + 1vh);
+    background-color: #0c1353;
+    
+
+}
+
+footer p{
+    margin-left: 2rem;;
+}
+footer .social-link ul{
+    display: flex;
+}
+
+footer .social-link a{
+    color: white;
+    margin-right: 2rem;
+}
+
+footer .social-link .fa{
+    margin-right: 0.5rem;
+}
+
 
 /* **** Menu article **** */
 

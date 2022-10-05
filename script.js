@@ -29,26 +29,26 @@ dataTab.addEventListener("click", () =>{
     articleData.classList.remove("flex");
     articleData.classList.add("active-article");
     articleHealth.classList.remove("active-article");
+    articleHealth.classList.add("flex");
     articleJob.classList.remove("active-article");
     articleJob.classList.add("flex");
-    articleHealth.classList.add("flex");
- })
+});
 
 healthTab.addEventListener("click", () =>{
-    articleHealth.classList.remove("flex");
-    articleData.classList.add("flex");
     articleData.classList.remove("active-article");
+    articleData.classList.add("flex");
+    articleHealth.classList.remove("flex");
     articleHealth.classList.add("active-article");
     articleJob.classList.remove("active-article");
     articleJob.classList.add("flex");
-})
+});
 
- jobTab.addEventListener("click", () =>{
-    articleJob.classList.remove("flex");
+jobTab.addEventListener("click", () =>{
     articleData.classList.remove("active-article");
+    articleData.classList.add("flex");
     articleHealth.classList.remove("active-article");
     articleHealth.classList.add("flex");
+    articleJob.classList.remove("flex");
     articleJob.classList.add("active-article");
-    articleData.classList.add("flex");
-})
+});
 
