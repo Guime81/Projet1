@@ -113,13 +113,12 @@ header .title .min-size{
 .menu-list-active{
     display:flex;
     position: absolute;
+    right: 0;
     width: 100vw;
     top: calc(40px + 3vw);
-    right: 0;
     background-image: url("medias/menuburger.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 @media screen and (min-width:1000px){
@@ -198,8 +197,6 @@ footer{
     top: 100vh;
     height: calc(2.5rem + 1vh);
     background-color: #0c1353;
-    
-
 }
 
 footer p{
@@ -220,6 +217,12 @@ footer .social-link .fa{
 
 
 /* **** Menu article **** */
+nav.sticky-menu-article{
+    position:sticky;
+    top: calc(42.5px + 3vw);
+    z-index: -1; /*pour passer sous menu-list-active du menu-burger*/
+}
+
 
 nav .sub-menu{
     display: flex;
@@ -227,7 +230,7 @@ nav .sub-menu{
     align-items: center;
 }
 
-nav .sub-menu-list {
+nav .sub-menu-list{
     font-size: calc(1.2rem + 0.6vw);
     color: #fff;
     text-align: center;
@@ -240,6 +243,10 @@ nav .sub-menu-list {
 
 /* **** Section article **** */
 
+.presentation{
+    position:relative; /*nécessaire pour z-index*/
+    z-index: -2; /*pour passer sous sticky-menu-article qui est en -1*/
+}
 .presentation .flex{
     display: none;
 }
