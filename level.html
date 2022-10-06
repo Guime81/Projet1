@@ -9,6 +9,7 @@
       content="Découvrez la plongée sous-marine à travers mes articles présentant cette activité sous divers aspects"
     />
     <title>Découverte de la plongée sous-marine</title>
+    <link rel="shortcut icon" type="image/png" href="medias/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -29,8 +30,8 @@
         <div id="bar3" class="bar bar3"></div>
       </div>
       <nav id="menu" class="menu-list">
-        <a class="active-tab" href="index.html">Accueil</a>
-        <a href="level.html">Les niveaux</a>
+        <a href="index.html">Accueil</a>
+        <a class="active-tab" href="level.html">Les niveaux</a>
         <a href="equipment.html">L'équipement</a>
         <a href="spots.html">Spots Européens</a>
       </nav>
@@ -43,12 +44,126 @@
     </section>
     <nav class="sticky-menu-article">
       <ul class="sub-menu">
-        <li id="data-tab" class="sub-menu-list">Quelques chiffres</li>
-        <li id="health-tab" class="sub-menu-list">Les bienfaits</li>
-        <li id="job-tab" class="sub-menu-list">Sport / Métier ?</li>
+        <li id="diver-level" class="sub-menu-list">Niveaux de plongeur</li>
+        <li id="teach-level" class="sub-menu-list">Niveaux d'enseignement</li>
+        <li id="deep" class="sub-menu-list">Espaces d'évolution</li>
       </ul>
     </nav>
-    <section class=""><!--doit être en z-index -2 en css--></section>
+    <section class="level">
+      <!--doit être en z-index -2 en css-->
+      <div class="diver-level table-flex">
+        <h3>Niveaux de plongeur en France</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Niveau</th>
+              <th>Prérogatives</th>
+              <th>Aptitude (Code du Sport)</th>
+              <th>CMAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Niveau 1</td>
+              <td>Plongeur encadré jusque 20 m</td>
+              <td>PE-20</td>
+              <td>Plongeur ★</td>
+            </tr>
+            <tr>
+              <td>Niveau 2</td>
+              <td>
+                Plongeur encadré jusqu'à 40 m
+                <p>Plongeur autonome jusqu'à 20 m</p>
+              </td>
+              <td>
+                PE-40
+                <p>PA-20</p>
+              </td>
+              <td>Plongeur ★★</td>
+            </tr>
+            <tr>
+              <td>Niveau 3</td>
+              <td>
+                Plongeur autonome jusqu'à 40 m
+                <p>Plongeur autonome jusqu'à 60 m avec accord du DP</p>
+              </td>
+              <td>PA-60</td>
+              <td>Plongeur ★★★</td>
+            </tr>
+            <tr>
+              <td>Niveau 4</td>
+              <td>
+                Encadrement (en exploration) de plongeurs Débutants à N4
+                <p>Plongeur autonome jusqu'à 60 m</p>
+              </td>
+              <td>GP</td>
+              <td>Plongeur ★★★</td>
+            </tr>
+            <tr>
+              <td>Niveau 5</td>
+              <td>
+                Directeur de plongée (en exploration)
+                <p>Plongeur autonome jusqu'à 60 m</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="teach-level table-flex">
+        <h3>Niveaux d'enseignement de la plongée en France</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Niveau</th>
+              <th>Prérogatives</th>
+              <th>Code du Sport</th>
+              <th>CMAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Moniteur E1 (initiateur)</td>
+              <td>
+                Enseignant du N1 au N2 jusqu'à 6 m
+                <p>
+                  Directeur de plongée (en milieu artificiel de moins de 6 m
+                  uniquement)
+                </p>
+              </td>
+              <td>E1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Moniteur E2</td>
+              <td>Enseignant du N1 au N4 jusqu'à 20 m</td>
+              <td>E2</td>
+              <td>Moniteur ★</td>
+            </tr>
+            <tr>
+              <td>Moniteur fédéral 1er degré (MF1)</td>
+              <td>
+                Enseignant du N1 au N5 jusque 40 m
+                <p>Directeur de plongée</p>
+              </td>
+              <td>E3</td>
+              <td>Moniteur ★★</td>
+            </tr>
+            <tr>
+              <td>Moniteur fédéral 2ème degré (MF2)</td>
+              <td>
+                Enseignant du N1 au N5 jusque 60 m
+                <p>Enseignant de MF1</p>
+              </td>
+              <td>E4</td>
+              <td>Moniteur ★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="deep-evolution"></figure>
+    </section>
     <footer>
       <p>Guillaume / P1 - WCS - Oct-22</p>
       <div class="social-link">
