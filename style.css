@@ -357,62 +357,70 @@ h3{
 
 /* ******** Level Page ******** */
 
+section.disp-inactive{
+    display: none;
+}
+
+section.disp-active{
+    display: block;
+}
+
 p{
     font-size: 1.6rem;
     margin: 1rem 2rem;
 
   }
-  .container {
+.container {
     /* width: 80vmin; */
     width: 90%;
     margin: 2rem auto;
     background-color: #ffffff;
     box-shadow: 0 20px 30px rgba(62, 122, 201, 0.2);
-  }
-  .tabs, .tabs-ens {
+}
+.tabs, .tabs-ens {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-  h4 {
+}
+h4 {
     font-size: 1.6rem;
     background-color: #e4e9fd;
     text-align: center;
     padding: 1.5rem 0;
     cursor: pointer;
     font-weight: 600;
-  }
-  .tab-content, .tab-content-ens {
+}
+.tab-content, .tab-content-ens {
     background-color: #ffffff;
     padding: 4rem 3rem;
-  }
-  .tab-content h5, .tab-content-ens h5 {
+}
+.tab-content h5, .tab-content-ens h5 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     color: #000224;
     font-weight: 600;
-  }
-  .tab-content img, .tab-content-ens img{
+}
+.tab-content img, .tab-content-ens img{
     display: block;
     width: 90%;
     max-width: 50rem; 
     margin: 1rem auto;
     border-radius: 0.5rem;
-  }
-  .tab-content p, .tab-content-ens p {
+}
+.tab-content p, .tab-content-ens p {
     font-size: 1.6rem;
     text-align: justify;
     color: #202238;
-  }
-  .tab-content .level, .tab-content-ens .level {
+}
+.tab-content .level, .tab-content-ens .level {
     display: none;
-  }
-  .tab-content .active, .tab-content-ens .active {
+}
+.tab-content .active, .tab-content-ens .active {
     display: block;
-  }
-  .tabs .active, .tabs-ens .active {
+}
+.tabs .active, .tabs-ens .active {
     background-color: #ffffff;
     color: #4d5bf9;
-  }
+}
 
 .deep-evolution{
     display: flex;
@@ -425,6 +433,11 @@ p{
     width: 90%;
     border-radius: 0.5rem;
 }
+
+@media screen and (min-width:1000px){
+
+}
+
 
 @media screen and (min-width: 700px){
     .deep-evolution img{

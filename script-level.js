@@ -14,6 +14,38 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
+//Display on - off Article page Accueil
+
+const diverLevel = document.getElementById("diver-level");
+const teacherLevel = document.getElementById("teach-level");
+const deepLevel = document.getElementById("deep");
+
+const diver = document.getElementById("diver");
+const teacher = document.getElementById("teacher");
+const deeper = document.getElementById("deeper");
+
+
+diverLevel.addEventListener("click", () =>{
+    diver.classList.replace("disp-inactive", "disp-active");
+    teacher.classList.replace("disp-active", "disp-inactive");
+    deeper.classList.replace("disp-active", "disp-inactive");
+});
+
+
+teacherLevel.addEventListener("click", () =>{
+    diver.classList.replace("disp-active", "disp-inactive");
+    teacher.classList.replace("disp-inactive", "disp-active");
+    deeper.classList.replace("disp-active", "disp-inactive");
+});
+
+
+deepLevel.addEventListener("click", () =>{
+    diver.classList.replace("disp-active", "disp-inactive");
+    teacher.classList.replace("disp-active", "disp-inactive");
+    deeper.classList.replace("disp-inactive","disp-active");        
+});
+
+
 // Scroll To Top
 
 const scrollToTop = document.getElementById("scroll");
