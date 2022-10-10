@@ -26,29 +26,38 @@ const articleJob = document.getElementById("job");
 
 
 dataTab.addEventListener("click", () =>{
-    articleData.classList.remove("flex");
-    articleData.classList.add("active-article");
-    articleHealth.classList.remove("active-article");
-    articleHealth.classList.add("flex");
-    articleJob.classList.remove("active-article");
-    articleJob.classList.add("flex");
+    articleData.classList.replace("flex", "active-article");
+    articleHealth.classList.replace("active-article", "flex");
+    articleJob.classList.replace("active-article", "flex");
 });
+
 
 healthTab.addEventListener("click", () =>{
-    articleData.classList.remove("active-article");
-    articleData.classList.add("flex");
-    articleHealth.classList.remove("flex");
-    articleHealth.classList.add("active-article");
-    articleJob.classList.remove("active-article");
-    articleJob.classList.add("flex");
+    articleData.classList.replace("active-article", "flex");
+    articleHealth.classList.replace("flex", "active-article");
+    articleJob.classList.replace("active-article", "flex");
 });
+
 
 jobTab.addEventListener("click", () =>{
-    articleData.classList.remove("active-article");
-    articleData.classList.add("flex");
-    articleHealth.classList.remove("active-article");
-    articleHealth.classList.add("flex");
-    articleJob.classList.remove("flex");
-    articleJob.classList.add("active-article");
+    articleData.classList.replace("active-article", "flex");
+    articleHealth.classList.replace("active-article", "flex");
+    articleJob.classList.replace("flex","active-article");        
 });
 
+
+// Scroll To Top
+
+const scrollToTop = document.getElementById("scroll");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 110){
+        scrollToTop.style.display="block";
+    } else {
+        scrollToTop.style.display="none";
+    }
+});
+
+scrollToTop.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+});
