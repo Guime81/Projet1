@@ -31,7 +31,7 @@ scrollToTop.addEventListener("click", () => {
 });
 
 
-// Navigation bloc par onglet
+// Navigation bloc par onglet plongeur
 
 let tabs = document.querySelectorAll(".tabs h4");
 let tabContents = document.querySelectorAll(".tab-content .level");
@@ -46,5 +46,25 @@ tabs.forEach((tab, index) => {
     });
     tabContents[index].classList.add("active");
     tabs[index].classList.add("active");
+  });
+});
+
+
+
+// Navigation bloc par onglet Enseignant
+
+let tabsEns = document.querySelectorAll(".tabs-ens h4");
+let tabContentsEns = document.querySelectorAll(".tab-content-ens .level");
+
+tabsEns.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContentsEns.forEach((content) => {
+      content.classList.remove("active");
+    });
+    tabsEns.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tabContentsEns[index].classList.add("active");
+    tabsEns[index].classList.add("active");
   });
 });
