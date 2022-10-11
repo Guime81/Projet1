@@ -39,22 +39,23 @@ h2{
 
 h3{
     font-size: calc(1.7rem + 1.5vw);
-    margin: 4rem 0 2rem;
+    margin: 3rem 3rem 2rem;
     text-align: center;
     color: #000224;
 }
 
-h4 {
+h4{
     font-size: 1.6rem;
     background-color: #0c1353;
     color: #fff;
     text-align: center;
+    border-right: 2px solid #094b5a;
     padding: 1.5rem 0;
     cursor: pointer;
 }
 
-h5 {
-    font-size: 2.8rem;
+h5{
+    font-size: calc(1rem + 1.5vw);
     color: #000224;
 }
 
@@ -381,24 +382,38 @@ section.disp-active{
     display: block;
 }
 
-.container {
-    /* width: 80vmin; */
+.container{
     width: 90%;
     margin: 2rem auto;
     background-color: #ffffff;
     box-shadow: 0 2rem 3rem rgba(62, 122, 201, 0.2);
 }
-.tabs, .tabs-ens {
+.tabs, .tabs-ens{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.tabs .active, .tabs-ens .active {
+section#diver p:first-of-type, section#teacher p:first-of-type{
+    margin: 1rem 3rem;
+}
+
+.tabs h4:hover:not(.active){
+    background: linear-gradient(to right, #15a6c7, #0a2d5e);
+}
+
+.tabs h4:last-of-type, .tabs-ens h4:last-of-type{
+    border-right: none;
+}
+
+.tabs .active, .tabs-ens .active{
     background-color: #ffffff;
     color: #0c1353;
 }
+.tab-content{
+    margin-bottom: 4rem;
+}
 
-.tab-content, .tab-content-ens {
+.tab-content, .tab-content-ens{
     background-color: #ffffff;
     padding: 2rem 3rem;
 }
@@ -411,10 +426,10 @@ section.disp-active{
     border-radius: 0.5rem;
 }
 
-.tab-content .level, .tab-content-ens .level {
+.tab-content .level, .tab-content-ens .level{
     display: none;
 }
-.tab-content .active, .tab-content-ens .active {
+.tab-content .active, .tab-content-ens .active{
     display: block;
 }
 
@@ -437,7 +452,6 @@ section.disp-active{
     }
 
 }
-
 
 @media screen and (min-width: 700px){
     .deep-evolution img{
