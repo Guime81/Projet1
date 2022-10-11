@@ -14,8 +14,6 @@ html{
     font-size: 62.5%;
     /*height: 100%;*/ /*Pour Sticky si non fonctionnel*/
 }
-
-
 body{
     min-height: 100vh;
     max-width: 1280px;
@@ -23,27 +21,23 @@ body{
     background-color: #e0dddd;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
-
 p{
     color: #202238;
     font-size: calc(1.4rem + 0.2vw);
     margin: 1rem 1.5rem;
 }
-
 h2{
     font-size: calc(1.2rem + 2vw);
     color: #fff;
     margin-bottom: 1rem;
     font-weight: 400;
 }
-
 h3{
     font-size: calc(1.7rem + 1.5vw);
     margin: 3rem 3rem 2rem;
     text-align: center;
     color: #000224;
 }
-
 h4{
     font-size: 1.6rem;
     background-color: #0c1353;
@@ -53,11 +47,11 @@ h4{
     padding: 1.5rem 0;
     cursor: pointer;
 }
-
 h5{
     font-size: calc(1rem + 1.5vw);
     color: #000224;
 }
+
 
 /* **** Header **** */
 
@@ -73,30 +67,25 @@ header.header-flex{
     right: 0;
     border-bottom: 1px solid #fff;
 }
-
 header .logo{
     width: calc(40px + 3vw);
     border-radius: 50%;
 }
-
 header .title{
     font-size: calc(1.4rem + 3vw);
     font-family: 'Kalam', cursive;
     color: #fff;
     text-shadow: 0 7px 10px #000;
 }
-
 header .title .min-size{
     font-size: calc(1rem + 2vw);
 }
-
 .burger-menu{
     width: calc(40px + 3vw);
     height: calc(40px + 3vw);
     position:relative;
     cursor: pointer;
 }
-
 .burger-menu .bar{
     width: 40px;
     height: 4px;
@@ -104,7 +93,6 @@ header .title .min-size{
     border-radius: 4px;
     position: absolute;
 }
-
 .burger-menu .bar1{
     top: calc(((40px + 3vw) / 2) - 12px);
 }
@@ -114,13 +102,11 @@ header .title .min-size{
 .burger-menu .bar3{
     top: calc(((40px + 3vw) / 2) + 8px);
 }
-
 .burger-menu .rotation{
     position: absolute;
     top: calc(((40px + 3vw) / 2) - 2px);
     transform: rotate(45deg);
     transition: transform 0.5s ease-in-out;
-
 }
 .burger-menu .rotation2{
     position: absolute;
@@ -131,7 +117,6 @@ header .title .min-size{
 .burger-menu .disparition{
     opacity: 0;
 }
-
 .menu-list a{
     display: block;
     color: #000;
@@ -139,17 +124,14 @@ header .title .min-size{
     text-align: center;
     padding: 1.5rem;
 }
-
 .menu-list a:last-of-type{
     border-bottom: none;
 }
-
 .menu-list{
     display: none;
     flex-direction: column;
-    justify-content: space-around;   
+    justify-content: space-around;     
 }
-
 .menu-list-active{
     display: flex;
     position: absolute;
@@ -160,12 +142,10 @@ header .title .min-size{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 @media screen and (min-width:1000px){
     header .logo{
         margin-left: 0.5rem;
     }
-    
     .burger-menu{
         display: none;
     }
@@ -186,7 +166,6 @@ header .title .min-size{
     .menu-list a:hover{
         color: #fff;
     }
-
     .menu-list .active-tab{
         position: relative;
         color: #fff;
@@ -205,7 +184,6 @@ section.search{
     background-size: cover;
     height: calc(10rem + 2vh);
 }
-
 .search input{
     background: transparent;
     border: 1px solid #fff;
@@ -217,6 +195,7 @@ section.search{
     color: #fff;
     font-size: 2rem;
 }
+
 
 /* **** Scroll To Top **** */
 
@@ -244,7 +223,6 @@ footer{
     height: calc(2.5rem + 1vh);
     background-color: #0c1353;
 }
-
 footer p{
     margin-left: 2rem;
     color: #fff;
@@ -254,15 +232,14 @@ footer p{
 footer .social-link ul{
     display: flex;
 }
-
 footer .social-link a{
     color: #fff;
     margin-right: 2rem;
 }
-
 footer .social-link .fa{
     margin-right: 0.5rem;
 }
+
 
 /* **** Menu article **** */
 /*nav.sticky-menu-article{
@@ -276,7 +253,6 @@ nav .sub-menu{
     justify-content: center;
     align-items: center;
 }
-
 nav .sub-menu-list{
     font-size: calc(1rem + 0.5vw);
     color: #fff;
@@ -289,7 +265,6 @@ nav .sub-menu-list{
     cursor: pointer;
     transition: 0.4s;
 }
-
 nav .sub-menu-list:hover{
     background: linear-gradient(to right, #15a6c7, #0a2d5e); 
 }
@@ -300,6 +275,7 @@ nav .sub-menu-list:hover{
     }
 }
 
+
 /* ******** Welcome Page ******** */
 
 /*
@@ -307,35 +283,29 @@ nav .sub-menu-list:hover{
     position:relative; nécessaire pour z-index
     z-index: -2; /*pour passer sous sticky-menu-article qui est en -1
 }*/
-
 .presentation .flex{
     display: none;
 }
-
 .active-article{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .presentation .content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .presentation img{
     width: 60%;
     border-radius: 5px 20px;
 }
-
 .presentation .paragraphe{
     margin: 1rem 1.5rem;
     padding: 0 1.5rem 1rem;
     box-shadow: 0.2rem 0.2rem 0.25rem  rgba(0, 0, 0, 0.15);
     border-bottom-right-radius: 1.5rem;
 }
-
 .presentation .paragraphe p:last-of-type{
     margin-top: 1rem;
 }
@@ -377,11 +347,9 @@ nav .sub-menu-list:hover{
 section.disp-inactive{
     display: none;
 }
-
 section.disp-active{
     display: block;
 }
-
 .container{
     width: 90%;
     margin: 2rem auto;
@@ -392,19 +360,15 @@ section.disp-active{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
 section#diver p:first-of-type, section#teacher p:first-of-type{
     margin: 1rem 3rem;
 }
-
 .tabs h4:hover:not(.active){
     background: linear-gradient(to right, #15a6c7, #0a2d5e);
 }
-
 .tabs h4:last-of-type, .tabs-ens h4:last-of-type{
     border-right: none;
 }
-
 .tabs .active, .tabs-ens .active{
     background-color: #ffffff;
     color: #0c1353;
@@ -412,12 +376,10 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 .tab-content{
     margin-bottom: 4rem;
 }
-
 .tab-content, .tab-content-ens{
     background-color: #ffffff;
     padding: 2rem 3rem;
 }
-
 .tab-content img, .tab-content-ens img{
     display: block;
     width: 90%;
@@ -425,20 +387,17 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     margin: 1rem auto;
     border-radius: 0.5rem;
 }
-
 .tab-content .level, .tab-content-ens .level{
     display: none;
 }
 .tab-content .active, .tab-content-ens .active{
     display: block;
 }
-
 .deep-evolution{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .deep-evolution img{
     margin: 2rem auto;
     width: 90%;
@@ -457,4 +416,126 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     .deep-evolution img{
         max-width: 63rem;
     }
+}
+
+
+/* ******** Equipment Page ******** */
+
+
+.gallery {
+    width: 90%;
+    /* max-width: ;
+    min-width: ; */
+    height: auto;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.equipment {
+    background-color: #ebe8e8;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.visible-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*position: relative;*/
+    /* z-index: 100; */
+    background-color: #54c0e0;
+    border-radius: 10px;
+
+}
+
+.equipment h4 {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.visible-content img {
+    width: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.invisible-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visible {
+    display: flex;
+}
+
+.invisible-content img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.equipment .line {
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #54c0e0;
+    border-radius: 2px;
+}
+
+.equipment p {
+    text-align: justify;
+    line-height: 1.2;
+    margin-top: 10px;
+    padding: 0 10px 10px;
+    background-color: #d3d2d2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .gallery {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .equipment {
+        width: auto;
+        /* height: auto; */
+        /* si contenu non uniforme passer en auto*/
+        height: 515px;
+        margin: 20px;
+    }
+
+    .visible-content {
+        justify-content: center;
+        border-radius: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    .visible-content img {
+        display: none;
+    }
+
+
+    .equipment h4 {
+        margin-left: 0;
+        padding: 5px;
+    }
+
+    .invisible-content {
+        display: initial;
+    }
+
 }
