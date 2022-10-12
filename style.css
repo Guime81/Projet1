@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Quando&display=swap');
 
 /* **** Reset **** */
 
@@ -16,7 +16,6 @@ html{
 }
 body{
     min-height: 100vh;
-    max-width: 1280px;
     margin: 0 auto;
     background-color: #e0dddd;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -27,25 +26,29 @@ p{
     margin: 1rem 1.5rem;
 }
 h2{
-    font-size: calc(1.2rem + 2vw);
+    font-size: calc(5rem + 1.5vw);
+    text-align: center;
     color: #fff;
     margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 h3{
-    font-size: calc(1.7rem + 1.5vw);
-    margin: 3rem 3rem 2rem;
+    font-family: 'Quando', serif;
+    font-size: calc(2rem + 1.7vw);
+    margin: 5rem 3rem 2rem;
     text-align: center;
-    color: #000224;
+    color: transparent;
+    background: linear-gradient(to right, #15a6c7, #2d63b0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 1px 1px #160f6380;
 }
 h4{
     font-size: 1.6rem;
     background-color: #0c1353;
     color: #fff;
     text-align: center;
-    border-right: 2px solid #094b5a;
-    padding: 1.5rem 0;
-    cursor: pointer;
 }
 h5{
     font-size: calc(1rem + 1.5vw);
@@ -59,12 +62,13 @@ header.header-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url("medias/banner.jpg") center bottom no-repeat;
+    background-color: rgba(0, 0, 0, 0.8); 
     background-size: cover;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
+    right:0;
+    left:0;
     border-bottom: 1px solid #fff;
 }
 header .logo{
@@ -128,19 +132,20 @@ header .title .min-size{
     border-bottom: none;
 }
 .menu-list{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;     
-}
-.menu-list-active{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: absolute;
-    right: 0;
-    width: 100vw;
     top: calc(40px + 3vw);
     background-image: url("medias/menuburger.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    right: -100vw;
+    width: 100vw;
+    transition: all 1s ease-in-out;
+}
+.menu-list-active{
+    right: 0;
 }
 @media screen and (min-width:1000px){
     header .logo{
@@ -152,6 +157,10 @@ header .title .min-size{
     .menu-list{
         display: flex;
         flex-direction: initial;
+        position: initial;
+        background: transparent;
+        justify-content: space-between;
+        width: auto;
     }
     .menu-list a{
         font-size: 2rem;
@@ -180,9 +189,9 @@ section.search{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("medias/banner.avif") center bottom no-repeat;
+    background: url("medias/banner.jpg") center bottom no-repeat;
     background-size: cover;
-    height: calc(10rem + 2vh);
+    height: 100vh;
 }
 .search input{
     background: transparent;
@@ -363,7 +372,12 @@ section.disp-active{
 section#diver p:first-of-type, section#teacher p:first-of-type{
     margin: 1rem 3rem;
 }
-.tabs h4:hover:not(.active){
+.tabs h4, .tabs-ens h4{
+    border-right: 2px solid #094b5a;
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+.tabs h4:hover:not(.active), .tabs-ens h4:hover:not(.active){
     background: linear-gradient(to right, #15a6c7, #0a2d5e);
 }
 .tabs h4:last-of-type, .tabs-ens h4:last-of-type{
@@ -409,7 +423,6 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     section.disp-inactive{
         display: block;
     }
-
 }
 
 @media screen and (min-width: 700px){
@@ -421,120 +434,111 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 
 /* ******** Equipment Page ******** */
 
-
-.gallery {
+.gallery{
     width: 90%;
-    /* max-width: ;
-    min-width: ; */
+    max-width: 50rem;
     height: auto;
-    margin: 10px auto 0;
+    margin: 5rem auto 6rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
-
-.equipment {
+.equipment{
     background-color: #ebe8e8;
     border-radius: 20px;
     width: 100%;
     height: auto;
-    margin: 5px;
+    margin: 0.5rem;
 }
-
-.visible-content {
+.visible-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*position: relative;*/
     /* z-index: 100; */
-    background-color: #54c0e0;
+    background-color: #0c1353;
     border-radius: 10px;
-
 }
-
-.equipment h4 {
-    margin-left: 10px;
-    font-size: 16px;
+.equipment h4{
+    margin-left: 1rem;
+    font-size: 1.6rem;
 }
-
 .visible-content img {
-    width: 32px;
-    margin-right: 10px;
+    width: 3.2rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
-
-.invisible-content {
-    display: none;
+.invisible-content{
+    display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out;
 }
-
-.visible {
-    display: flex;
+.visible{
+    max-height: 55vh;
 }
-
-.invisible-content img {
+.invisible-content img{
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 1rem;
+    transition: transform 0.6s ease;
 }
-
-.equipment .line {
+.invisible-content img:hover{
+    transform: scale(1.05) rotate(2deg);
+}
+.equipment .line{
     width: 70%;
     margin: 0 auto;
-    border: 2px solid #54c0e0;
+    height: 0.3rem;
+    background: linear-gradient(to right, #15a6c7, #0a2d5e);
     border-radius: 2px;
 }
-
-.equipment p {
+.equipment p{
     text-align: justify;
-    line-height: 1.2;
-    margin-top: 10px;
+    margin: 1rem 0 0;
     padding: 0 10px 10px;
     background-color: #d3d2d2;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-
 @media screen and (min-width: 1000px) {
 
-    .gallery {
+    .gallery{
         width: 100%;
-        margin: 100px auto 0;
+        max-width: 128rem;
+        margin: 4rem auto 0;
         padding: 0 20px;
         display: grid;
         grid-template-columns: repeat(auto-fit, 300px);
         gap: 20px;
         justify-content: center;
     }
-
-    .equipment {
+    .equipment p{
+        font-size: 1.6rem;
+    }
+    .equipment{
         width: auto;
         /* height: auto; */
         /* si contenu non uniforme passer en auto*/
         height: 515px;
-        margin: 20px;
+        margin: 2rem;
     }
-
-    .visible-content {
+    .visible-content{
         justify-content: center;
         border-radius: 0;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
     }
-
-    .visible-content img {
+    .visible-content img{
         display: none;
     }
-
-
-    .equipment h4 {
+    .equipment h4{
         margin-left: 0;
-        padding: 5px;
+        padding: 0.5rem;
     }
-
-    .invisible-content {
+    .invisible-content{
         display: initial;
     }
 
