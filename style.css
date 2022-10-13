@@ -496,20 +496,19 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 }
 
 @media screen and (min-width: 1000px) {
-
     .gallery{
         margin: 4rem auto 0;
-        padding: 0 20px;
+        padding: 0 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, 300px);
-        gap: 20px;
+        gap: 2rem;
         justify-content: center;
     }
     .equipment p{
         font-size: 1.6rem;
     }
     .equipment{
-        height: 515px;
+        height: 51.5rem;
         margin: 2rem;
     }
     .visible-content{
@@ -543,4 +542,57 @@ iframe{
 }
 
 
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    section .wrapper{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 40rem);
+        grid-template-rows: 25rem repeat(7, 25rem);
+        gap: 3rem;
+        grid-template-areas:
+            "a a"
+            "b ."
+            "b c"
+            "d c"
+            "d e"
+            "f e"
+            "f g"
+            ". g";
+    }
+    .wrapper .spot-a{
+    grid-area: a;
+    }
+    .wrapper .spot-b{
+        grid-area: b;
+    }
+    .wrapper .spot-c{
+        grid-area: c;
+    }
+    .wrapper .spot-d{
+        grid-area: d;
+    }
+    .wrapper .spot-e{
+        grid-area: e;
+    }
+    .wrapper .spot-f{
+        grid-area: f;
+    }
+    .wrapper .spot-g{
+        grid-area: g;
+    }
+    article.spots{
+        width: 90%;
+        min-width: 36rem;
+        max-width: 80rem;
+    }
+}
 
