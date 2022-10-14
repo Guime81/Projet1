@@ -30,3 +30,18 @@ scrollToTop.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
 
+
+// Modal
+
+let modal = document.getElementById("modal");
+let openBtn = document.getElementById("openmodal");
+let closeBtn = document.getElementById("closemodal");
+
+openBtn.addEventListener("click", () => {
+    modal.showModal();
+})
+
+closeBtn.addEventListener("click", () =>{
+    modal.close();
+})
+

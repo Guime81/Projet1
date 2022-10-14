@@ -14,35 +14,20 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
-//Display on - off Article page Accueil
+//Switch on - off Display levels
 
-const diverLevel = document.getElementById("diver-level");
-const teacherLevel = document.getElementById("teach-level");
-const deepLevel = document.getElementById("deep");
+const buttons = document.querySelectorAll(".sub-menu li");
+const levels = document.querySelectorAll("main section");
 
-const diver = document.getElementById("diver");
-const teacher = document.getElementById("teacher");
-const deeper = document.getElementById("deeper");
-
-
-diverLevel.addEventListener("click", () =>{
-    diver.classList.replace("disp-inactive", "disp-active");
-    teacher.classList.replace("disp-active", "disp-inactive");
-    deeper.classList.replace("disp-active", "disp-inactive");
-});
-
-
-teacherLevel.addEventListener("click", () =>{
-    diver.classList.replace("disp-active", "disp-inactive");
-    teacher.classList.replace("disp-inactive", "disp-active");
-    deeper.classList.replace("disp-active", "disp-inactive");
-});
-
-
-deepLevel.addEventListener("click", () =>{
-    diver.classList.replace("disp-active", "disp-inactive");
-    teacher.classList.replace("disp-active", "disp-inactive");
-    deeper.classList.replace("disp-inactive","disp-active");        
+buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        levels.forEach((level) => {
+            level.classList.remove("disp-active");
+            level.classList.add("disp-inactive");
+        });
+        levels[index].classList.add("disp-active");
+        levels[index].classList.remove("disp-inactive");
+    });
 });
 
 
@@ -63,7 +48,7 @@ scrollToTop.addEventListener("click", () => {
 });
 
 
-// Navigation bloc par onglet plongeur
+// Navigation by tabs diver
 
 let tabs = document.querySelectorAll(".tabs h4");
 let tabContents = document.querySelectorAll(".tab-content .level");
@@ -82,8 +67,7 @@ tabs.forEach((tab, index) => {
 });
 
 
-
-// Navigation bloc par onglet Enseignant
+// Navigation by tabs teacher
 
 let tabsEns = document.querySelectorAll(".tabs-ens h4");
 let tabContentsEns = document.querySelectorAll(".tab-content-ens .level");

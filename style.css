@@ -290,7 +290,7 @@ nav .sub-menu-list:hover{
 
 /* ******** Welcome Page ******** */
 
-.presentation .flex{
+.presentation .inactive-article-flex{
     display: none;
 }
 .active-article{
@@ -321,7 +321,7 @@ nav .sub-menu-list:hover{
     .presentation{
         margin-bottom: 3rem;
     }
-    .presentation .flex{
+    .presentation .inactive-article-flex{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -500,7 +500,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
         margin: 4rem auto 0;
         padding: 0 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-columns: repeat(auto-fit, 30rem);
         gap: 2rem;
         justify-content: center;
     }
@@ -529,6 +529,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     }
 }
 
+
 /* ******** Spot diving Page******** */
 
 iframe{
@@ -540,15 +541,108 @@ iframe{
     border-radius: 1rem;
     box-shadow: 0 2rem 3rem rgba(62, 122, 201, 0.2);
 }
+section .wrapper{
+    display: none;
+}
+.wrapper .spots{
+    display: none;
+}
+.wrapper figure{
+    display: none;
+}
+dialog{
+    width: 90%;
+    height: 60rem;
+    max-width: 32.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin: auto;
+}
+dialog::backdrop{
+    background-color: #d7dce180;
+    backdrop-filter: blur(1rem);
+}
+dialog article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+dialog button{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #0c1353;
+    border: none;
+    width: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+dialog img{
+    display: block;
+    margin: 2rem auto;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem ;
+    border-bottom-right-radius: 1rem ;
+    border-top-left-radius: 1rem;
+    
+}
+dialog h4{
+    max-width: 70%;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding:0.3rem
+}
+
+nav ul.menu-modal {
+    display: flex;
+    justify-content: center;
 
 
+}
 
 
-
-
-
-
-
+@media screen and (min-width: 700px){
+    section .wrapper{
+        margin: 4rem auto 3rem;
+        padding: 0 2rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 30rem);
+        gap: 3rem;
+    }
+        
+    .wrapper .spots{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        border: 3px solid #0c1353;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem ;
+        border-bottom-right-radius: 1rem ;
+        border-top-left-radius: 1rem;
+    }
+    .spots img, .wrapper figure img{
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem ;
+        border-bottom-right-radius: 1rem ;
+        border-top-left-radius: 1rem;
+        }
+    .spots h4{
+        min-width: 70%;
+        border-radius: 1rem;
+        margin: 2rem 0;
+        padding:0.3rem;
+    }
+    .wrapper figure{
+        display: none;
+    }
+}
 
 
 @media screen and (min-width: 1000px) {
@@ -556,20 +650,22 @@ iframe{
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, 40rem);
-        grid-template-rows: 25rem repeat(7, 25rem);
-        gap: 3rem;
+        grid-template-rows: auto repeat(7, auto);
+        gap: 4rem;
         grid-template-areas:
             "a a"
-            "b ."
+            "b h"
             "b c"
             "d c"
             "d e"
             "f e"
             "f g"
-            ". g";
+            "i g";
     }
     .wrapper .spot-a{
     grid-area: a;
+    justify-self: center;
+    align-self: center;
     }
     .wrapper .spot-b{
         grid-area: b;
@@ -589,10 +685,23 @@ iframe{
     .wrapper .spot-g{
         grid-area: g;
     }
+    .wrapper figure{
+        display: block;
+    }
+    .wrapper .decoration-1{
+        grid-area: h;
+        justify-self: center;
+        align-self: center;
+    }
+    .wrapper .decoration-2{
+        grid-area: i;
+        justify-self: center;
+        align-self: center;
+    }
     article.spots{
-        width: 90%;
-        min-width: 36rem;
-        max-width: 80rem;
+        justify-self: center;
+        align-self: center;
+        max-width: 80%;
     }
 }
 

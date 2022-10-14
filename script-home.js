@@ -14,35 +14,20 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
-//Display on - off Article page Accueil
+//Switch on - off Article welcome page
 
-const dataTab = document.getElementById("data-tab");
-const healthTab = document.getElementById("health-tab");
-const jobTab = document.getElementById("job-tab");
+const tabs = document.querySelectorAll(".sub-menu li");
+const articles = document.querySelectorAll("main article");
 
-const articleData = document.getElementById("data");
-const articleHealth = document.getElementById("health");
-const articleJob = document.getElementById("job");
-
-
-dataTab.addEventListener("click", () =>{
-    articleData.classList.replace("flex", "active-article");
-    articleHealth.classList.replace("active-article", "flex");
-    articleJob.classList.replace("active-article", "flex");
-});
-
-
-healthTab.addEventListener("click", () =>{
-    articleData.classList.replace("active-article", "flex");
-    articleHealth.classList.replace("flex", "active-article");
-    articleJob.classList.replace("active-article", "flex");
-});
-
-
-jobTab.addEventListener("click", () =>{
-    articleData.classList.replace("active-article", "flex");
-    articleHealth.classList.replace("active-article", "flex");
-    articleJob.classList.replace("flex","active-article");        
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+        articles.forEach((article) => {
+            article.classList.remove("active-article");
+            article.classList.add("inactive-article-flex");
+        });
+        articles[index].classList.add("active-article");
+        articles[index].classList.remove("inactive-article-flex");
+    });
 });
 
 
@@ -61,3 +46,6 @@ window.addEventListener("scroll", () => {
 scrollToTop.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
+
+
+

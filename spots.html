@@ -42,13 +42,6 @@
         <input type="search" />
       </div>
     </section>
-    <nav class="sticky-menu-article">
-      <ul class="sub-menu">
-        <li id="data-tab" class="sub-menu-list">Quelques chiffres</li>
-        <li id="health-tab" class="sub-menu-list">Les bienfaits</li>
-        <li id="job-tab" class="sub-menu-list">Sport / Métier ?</li>
-      </ul>
-    </nav>
     <main>
       <section>
         <h3>Les spots de plongée dans le monde</h3>
@@ -60,10 +53,123 @@
       </section>
       <section>
         <h3>Les spots de plongée en France</h3>
+        <dialog id="modal">
+          <button id="closemodal">X</button>
+          <article class="spots spot-b">
+            <img
+              src="medias/port-cros260.jpg"
+              alt="Vue des fonds marins de Port-Cros"
+            />
+            <h4>Port-Cros</h4>
+            <p>
+              Ports-Cros est le premier parc marin d'Europe. Si Port-Cros est
+              une destination appréciée des adeptes de la randonnée avec vue sur
+              mer, cela reste majoritairement une destination plébiscitée par
+              les plongeurs des quatre coins de France mais aussi de Suisse.
+              Petit à petit le spot de plongée commence à être connu en dehors
+              de nos frontières.
+            </p>
+          </article>
+        </dialog>
+        <dialog>
+          <article class="spots spot-c">
+            <img
+              src="medias/porquerolles260.jpg"
+              alt="Vue des fonds marins de l'île de Porquerolles"
+            />
+            <h4>Porquerolles</h4>
+            <p>
+              Porquerolles, la perle de la côte varoise, est une destination de
+              choix depuis longtemps, sa riche faune marine étant protégée
+              depuis 1963.En immersion, nous pouvons y observer des immenses
+              bancs de sars, des nudibranches, des mérous, des poulpes... C’est
+              un excellent spot de plongée pour les plongeurs débutants pour les
+              expérimentés.
+            </p>
+          </article>
+        </dialog>
+        <dialog>
+          <article class="spots spot-d">
+            <img
+              src="medias/etang-thau260.jpg"
+              alt="Vue des fonds marins de l'étang de Thau"
+            />
+            <h4>L’Etang de Thau</h4>
+            <p>
+              L’étang de Thau est un lac d’eau salée réputé pour l’ostréiculture
+              mais c’est aussi un spot très réputé pour ceux qui aiment la
+              plongée. Ce site de plongée du bord, très peu profond, est presque
+              aussi populaire chez les amateurs de biologie marine et les
+              photographes sous-marins que chez le plongeur lambda.
+            </p>
+          </article>
+        </dialog>
+        <dialog>
+          <article class="spots spot-e">
+            <img
+              src="medias/calanques260.jpg"
+              alt="Vue des fonds marins du Parc National des Calanques"
+            />
+            <h4>Parc national des Calanques</h4>
+            <p>
+              Les meilleurs spots de plongée sont principalement situés autour
+              de l’archipel du Riou. Le terrain de jeu est idéal pour les
+              plongeurs expérimentés qui aiment les plongées profondes avec des
+              tunnels, des grottes, des canyons, et de superbes tombants
+              recouverts de gorgones jaunes et rouges. Les couleurs des tombants
+              n’ont rien à envier à certains récifs coralliens des tropiques.
+            </p>
+          </article>
+        </dialog>
+        <dialog>
+          <article class="spots spot-f">
+            <img
+              src="medias/crozon260.jpg"
+              alt="Vue des fonds marins de la presqu'île de Crozon"
+            />
+            <h4>Presqu'île de Crozon</h4>
+            <p>
+              Les paysages sous-marins constitués de blocs de granit recouverts
+              de laminaires et d’oursins sont typiques de la Bretagne et en
+              particulier du côté de Crozon. On y croise de nombreuses anémones
+              bijoux sur les parois rocheuses. Vous entendrez les plongeurs
+              bretons les désigner plus souvent par leur nom scientifique,
+              corynactis (Corynactis Viridis).
+            </p>
+          </article>
+        </dialog>
+        <dialog>
+          <article class="spots spot-g">
+            <img
+              src="medias/glenan260.jpg"
+              alt="Vue des fonds marins de l'archipel des Glénan"
+            />
+            <h4>L'archipel des Glénan</h4>
+            <p>
+              Eaux vertes émeraude et plages de sable blanc, les îles Glenan, au
+              large de Fouesnant en Finistère sud, offrent des paysages
+              paradisiaques et enchanteurs. Appelé les « Seychelles bretonnes »,
+              l’archipel est le repaire des amoureux de nature. Sous l’eau,
+              faune et flore exceptionnelles et présence de nombreuses épaves en
+              font un lieu privilégié de plongée sous-marine, pour les débutants
+              comme les initiés.
+            </p>
+          </article>
+        </dialog>
+        <nav>
+          <ul class="menu-modal">
+            <li id="openmodal">Port-Cros</li>
+            <li>Porquerolles</li>
+            <li>Étang de Thau</li>
+            <li>Parc national des Calanques</li>
+            <li>Presqu'île de Crozon</li>
+            <li>Archipel des Génan</li>
+          </ul>
+        </nav>
         <div class="wrapper">
           <p class="spot-a">
-            La plongée en France est l’une des meilleures en Europe avec des
-            spots de plongée tels que le Parc National de Port-Cros et
+            La plongée en France est l’une des plus attractives en Europe avec
+            des spots de plongée tels que le Parc National de Port-Cros et
             Porquerolles, le premier parc national marin de France depuis 1963,
             et leurs sites de plongée les plus célèbres tels que les épaves du
             Grec et du Donator, ou de la Gabinière et ses mérous, au cœur de la
@@ -84,7 +190,7 @@
               src="medias/port-cros260.jpg"
               alt="Vue des fonds marins de Port-Cros"
             />
-            <h4>Port Cros</h4>
+            <h4>Port-Cros</h4>
             <p>
               Ports-Cros est le premier parc marin d'Europe. Si Port-Cros est
               une destination appréciée des adeptes de la randonnée avec vue sur
@@ -169,6 +275,18 @@
               comme les initiés.
             </p>
           </article>
+          <figure class="decoration-1">
+            <img
+              src="medias/sec.jpg"
+              alt="Plongeur en exploration sur un sec en Méditerranée"
+            />
+          </figure>
+          <figure class="decoration-2">
+            <img
+              src="medias/epave.jpg"
+              alt="Plongeur en exploration sur une épave"
+            />
+          </figure>
         </div>
       </section>
     </main>
@@ -188,6 +306,6 @@
         <img src="medias/scrolltotop.svg" alt="Retourner en haut" />
       </div>
     </footer>
-    <script src="script-home.js"></script>
+    <script src="script-spots.js"></script>
   </body>
 </html>
