@@ -33,15 +33,19 @@ scrollToTop.addEventListener("click", () => {
 
 // Modal
 
-let modal = document.getElementById("modal");
-let openBtn = document.getElementById("openmodal");
-let closeBtn = document.getElementById("closemodal");
+const modals = document.querySelectorAll(".modal");
+const openBtns = document.querySelectorAll("nav.menu-modal button");
+const closeBtns = document.querySelectorAll(".closemodal");
 
-openBtn.addEventListener("click", () => {
-    modal.showModal();
-})
+openBtns.forEach((openBtn, index) => {
+    openBtn.addEventListener("click", () => {
+        modals[index].showModal();
+    })
+});
 
-closeBtn.addEventListener("click", () =>{
-    modal.close();
+closeBtns.forEach((closeBtn, index) => {
+    closeBtn.addEventListener("click", () => {
+        modals[index].close();
+    })
 })
 

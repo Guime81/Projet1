@@ -12,7 +12,6 @@
 
 html{
     font-size: 62.5%;
-    /*height: 100%;*/ /*Pour Sticky si non fonctionnel*/
 }
 body{
     min-height: 100vh;
@@ -42,7 +41,7 @@ h3{
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 1px 1px #160f6380;
+    text-shadow: 0px 0.1rem 0.1rem #160f6380;
 }
 h4{
     font-size: 1.6rem;
@@ -69,52 +68,52 @@ header.header-flex{
     top: 0;
     right:0;
     left:0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.1rem solid #fff;
 }
 header .logo{
-    width: calc(40px + 3vw);
+    width: calc(4rem + 3vw);
     border-radius: 50%;
 }
 header .title{
     font-size: calc(1.4rem + 3vw);
     font-family: 'Kalam', cursive;
     color: #fff;
-    text-shadow: 0 7px 10px #000;
+    text-shadow: 0 0.7rem 1rem #000;
 }
 header .title .min-size{
     font-size: calc(1rem + 2vw);
 }
 .burger-menu{
-    width: calc(40px + 3vw);
-    height: calc(40px + 3vw);
+    width: calc(4rem + 3vw);
+    height: calc(4rem + 3vw);
     position:relative;
     cursor: pointer;
 }
 .burger-menu .bar{
-    width: 40px;
-    height: 4px;
+    width: 4rem;
+    height: 0.4rem;
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     position: absolute;
 }
 .burger-menu .bar1{
-    top: calc(((40px + 3vw) / 2) - 12px);
+    top: calc(((4rem + 3vw) / 2) - 1.2rem);
 }
 .burger-menu .bar2{
-    top: calc(((40px + 3vw) / 2) - 2px);
+    top: calc(((4rem + 3vw) / 2) - 0.2rem);
 }
 .burger-menu .bar3{
-    top: calc(((40px + 3vw) / 2) + 8px);
+    top: calc(((4rem + 3vw) / 2) + 0.8rem);
 }
 .burger-menu .rotation{
     position: absolute;
-    top: calc(((40px + 3vw) / 2) - 2px);
+    top: calc(((4rem + 3vw) / 2) - 0.2rem);
     transform: rotate(45deg);
     transition: transform 0.5s ease-in-out;
 }
 .burger-menu .rotation2{
     position: absolute;
-    top: calc(((40px + 3vw) / 2) - 2px);
+    top: calc(((4rem + 3vw) / 2) - 0.2rem);
     transform: rotate(-45deg);
     transition: transform 0.5s ease-in-out;
 }
@@ -136,7 +135,7 @@ header .title .min-size{
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: calc(40px + 3vw);
+    top: calc(4rem + 3vw);
     background-image: url("medias/menuburger.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +169,7 @@ header .title .min-size{
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         background-image: url("medias/fondmenu.jpg");
-        box-shadow: 0 4px 5px #d3dae2;
+        box-shadow: 0 0.4rem 0.5rem #d3dae2;
     }
     .menu-list a:hover{
         color: #fff;
@@ -205,6 +204,7 @@ section.search{
     color: #fff;
     font-size: 2rem;
 }
+
 
 /* **** Main Size **** */
 
@@ -266,9 +266,10 @@ nav .sub-menu{
     align-items: center;
 }
 nav .sub-menu-list{
-    font-size: calc(1rem + 0.5vw);
+    font-size: 1.6rem;
     color: #fff;
     text-align: center;
+    height: 3.2rem;
     padding: 0.5rem;
     margin: 0 0.3rem 1rem 0.3rem;
     background-color: #0c1353;
@@ -305,7 +306,7 @@ nav .sub-menu-list:hover{
 }
 .presentation img{
     width: 60%;
-    border-radius: 5px 20px;
+    border-radius: 0.5rem 2rem;
 }
 .presentation .paragraphe{
     margin: 1rem 1.5rem;
@@ -371,7 +372,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     margin: 1rem 3rem;
 }
 .tabs h4, .tabs-ens h4{
-    border-right: 2px solid #094b5a;
+    border-right: 0.2rem solid #094b5a;
     padding: 1.5rem 0;
     cursor: pointer;
 }
@@ -437,10 +438,8 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 }
 .equipment{
     background-color: #ebe8e8;
-    border-radius: 20px;
+    border-radius: 2rem;
     max-width: 50rem;
-    /* width: auto; */
-    /* height: auto; */
     margin: 0.5rem;
 }
 .visible-content{
@@ -449,7 +448,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     align-items: center;
     max-width: 50rem;
     background-color: #0c1353;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 .equipment h4{
     margin-left: 1rem;
@@ -484,15 +483,15 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     margin: 0 auto;
     height: 0.3rem;
     background: linear-gradient(to right, #15a6c7, #0a2d5e);
-    border-radius: 2px;
+    border-radius: 0.2rem;
 }
 .equipment p{
     text-align: justify;
     margin: 1rem 0 0;
-    padding: 0 10px 10px;
+    padding: 0 1rem 1rem;
     background-color: #d3d2d2;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -514,8 +513,8 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     .visible-content{
         justify-content: center;
         border-radius: 0;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
     }
     .visible-content img{
         display: none;
@@ -552,10 +551,13 @@ section .wrapper{
 }
 dialog{
     width: 90%;
-    height: 60rem;
+    height: 63rem;
     max-width: 32.5rem;
     border: none;
-    border-radius: 1rem;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem ;
+    border-bottom-right-radius: 1rem ;
+    border-top-left-radius: 1rem;
     margin: auto;
 }
 dialog::backdrop{
@@ -568,78 +570,89 @@ dialog article{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-dialog button{
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: #0c1353;
-    border: none;
-    width: 2rem;
-    cursor: pointer;
-    border-radius: 50%;
+section p.paragraphe-spots{
+    margin: 1rem 1.5rem;
+    padding: 0 1.5rem 1rem;
+    box-shadow: 0.2rem 0.2rem 0.25rem  rgba(0, 0, 0, 0.15);
+    border-bottom-right-radius: 1.5rem;
 }
-dialog img{
+dialog img.closemodal{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+dialog article img{
     display: block;
     margin: 2rem auto;
     border-bottom-left-radius: 4rem;
     border-top-right-radius: 4rem ;
     border-bottom-right-radius: 1rem ;
     border-top-left-radius: 1rem;
-    
 }
 dialog h4{
     max-width: 70%;
     border-radius: 1rem;
     margin: 2rem auto;
-    padding:0.3rem
+    padding: 0.3rem;
 }
-
-nav ul.menu-modal {
-    display: flex;
+nav.menu-modal{
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
     justify-content: center;
-
-
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
 }
-
+nav button{
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    background-color: #0c1353;
+    height: 3.2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 700px){
     section .wrapper{
-        margin: 4rem auto 3rem;
+        margin-bottom: 3rem;
         padding: 0 2rem;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, 30rem);
         gap: 3rem;
     }
-        
     .wrapper .spots{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 1rem;
-        border: 3px solid #0c1353;
+        border: 0.3rem solid #0c1353;
+    }
+    .spots img, .wrapper figure img, .wrapper .spots{
         border-bottom-left-radius: 4rem;
-        border-top-right-radius: 4rem ;
-        border-bottom-right-radius: 1rem ;
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 1rem;
         border-top-left-radius: 1rem;
     }
-    .spots img, .wrapper figure img{
-        border-bottom-left-radius: 4rem;
-        border-top-right-radius: 4rem ;
-        border-bottom-right-radius: 1rem ;
-        border-top-left-radius: 1rem;
-        }
     .spots h4{
         min-width: 70%;
         border-radius: 1rem;
         margin: 2rem 0;
         padding:0.3rem;
     }
+    section h3 + p.paragraphe-spots{
+        display: none;
+    }
     .wrapper figure{
+        display: none;
+    }
+    nav button{
         display: none;
     }
 }
