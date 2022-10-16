@@ -223,6 +223,7 @@ section.search{
 .bubble-position{
     position: relative;
     top: 15vh;
+
 }
 .search img:first-of-type{
     display: block;
@@ -234,6 +235,7 @@ section.search{
     width: 3.5rem;
     height: 3.5rem;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 
@@ -421,7 +423,7 @@ section p.diver, section p.teacher{
 }
 .tab-content, .tab-content-ens{
     background-color: var(--bg-color-tabs-level-active);
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
     margin-bottom: 6rem;
 }
 .tab-content p, .tab-content-ens p{
@@ -514,7 +516,7 @@ section p.diver, section p.teacher{
 }
 .equipment .line{
     width: 70%;
-    margin: 0 auto;
+    margin: 1rem auto;
     height: 0.3rem;
     background: var(--main-gradient);
     border-radius: 0.2rem;
