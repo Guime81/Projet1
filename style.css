@@ -83,9 +83,9 @@ header.header-flex{
     top: 0;
     right:0;
     left:0;
-    border-bottom: 0.1rem solid #fff;
 }
 header .logo{
+    display: block;
     width: calc(4rem + 3vw);
     border-radius: 50%;
 }
@@ -222,7 +222,7 @@ section.search{
 }
 .bubble-position{
     position: relative;
-    top: 20vh;
+    top: 15vh;
 }
 .search img:first-of-type{
     display: block;
@@ -336,7 +336,8 @@ nav .sub-menu-list:hover{
     align-items: center;
 }
 .presentation img{
-    width: 60%;
+    width: 80%;
+    max-width: 57rem;
     border-radius: 0.5rem 2rem;
 }
 .presentation .paragraphe{
@@ -364,7 +365,8 @@ nav .sub-menu-list:hover{
         justify-content: center;
     }
     .presentation img{
-        width: 35%;
+        width: 45%;
+        max-width: 49rem;
         margin-left: 1.5rem;  
     }
     .presentation .order-a{
@@ -422,10 +424,13 @@ section p.diver, section p.teacher{
     padding: 2rem 3rem;
     margin-bottom: 6rem;
 }
+.tab-content p, .tab-content-ens p{
+    margin: 1rem auto;
+}
 .tab-content img, .tab-content-ens img{
     display: block;
-    width: 90%;
-    max-width: 50rem; 
+    width: 100%;
+    max-width: 63rem; 
     margin: 1rem auto;
     border-radius: 0.5rem;
 }
