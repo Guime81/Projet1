@@ -40,11 +40,10 @@ p{
     margin: 1rem 1.5rem;
 }
 h2{
-    font-size: calc(5rem + 1.5vw);
+    font-size: calc(3.5rem + 2.5vw);
     text-align: center;
     color: var(--main-font-color);
     margin-bottom: 1rem;
-    font-weight: 700;
 }
 h3{
     font-family: 'Quando', serif;
@@ -202,6 +201,7 @@ header .title .min-size{
 
 section.search{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url("medias/banner.jpg") center bottom no-repeat;
@@ -220,19 +220,19 @@ section.search{
     color: var(--main-font-color);
     font-size: 2rem;
 }
+.bubble-position{
+    position: relative;
+    top: 20vh;
+}
 .search img:first-of-type{
+    display: block;
     width: 5rem;
     height: 14.7rem;
-    position: absolute;
-    top: 67vh;
-    left: calc(50vw - (5rem / 2 ));
 }
 .search img:last-of-type{
+    display: block;
     width: 3.5rem;
     height: 3.5rem;
-    position: absolute;
-    top: 87vh;
-    left: calc(50vw - (3.5rem / 2 ));
     cursor: pointer;
 }
 
@@ -291,13 +291,12 @@ footer .social-link .fa{
 
 nav .sub-menu{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 nav .sub-menu li{
     font-size: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 2.5rem;
+    width: 13rem;
     color: var(--main-font-color);
     text-align: center;
     height: 5rem;
