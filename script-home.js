@@ -14,6 +14,32 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
+// Scroll Down
+
+const down = document.querySelector(".down");
+const bubbles = document.querySelector(".bubble");
+
+down.addEventListener("click", () => {
+    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+    let bannerHeight = document.querySelector("section.search").offsetHeight;
+    document.documentElement.scrollTop = bannerHeight - headerHeight;
+});
+
+// Disparition Down and bubbles on scroll
+/*
+window.addEventListener("scroll", () => {
+    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+    let bubblesPosition = bubbles.offsetTop;
+    if(window.scrollY > (bubblesPosition - headerHeight)){
+        bubbles.style.display="none";
+         down.style.display="none";
+    } else {
+         bubbles.style.display="absolute";
+         down.style.display="absolute";
+    }    
+});*/
+
+
 //Switch on - off Article welcome page
 
 const tabs = document.querySelectorAll(".sub-menu li");
@@ -46,6 +72,3 @@ window.addEventListener("scroll", () => {
 scrollToTop.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
-
-
-

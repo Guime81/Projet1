@@ -79,6 +79,7 @@ header.header-flex{
     background-color: rgba(0, 0, 0, 0.8); 
     background-size: cover;
     position: fixed;
+    z-index: 100;
     width: 100%;
     top: 0;
     right:0;
@@ -219,6 +220,21 @@ section.search{
     color: var(--main-font-color);
     font-size: 2rem;
 }
+.search img:first-of-type{
+    width: 5rem;
+    height: 14.7rem;
+    position: absolute;
+    top: 73vh;
+    left: calc(50vw - (5rem / 2 ));
+}
+.search img:last-of-type{
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 90vh;
+    left: calc(50vw - (3.5rem / 2 ));
+    cursor: pointer;
+}
 
 
 /* **** Main Size **** */
@@ -249,9 +265,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     font-size: 1.4rem;
-    top: 100vh;
     height: calc(2.5rem + 1vh);
     background-color: var(--main-bg-color);
 }
@@ -332,11 +346,11 @@ nav .sub-menu-list:hover{
 .presentation .paragraphe p:last-of-type{
     margin-top: 1rem;
 }
+.presentation article{
+    margin-bottom: 2rem;
+}
 
 @media screen and (min-width:1000px){
-    .presentation{
-        margin-bottom: 3rem;
-    }
     .presentation .inactive-article-flex{
         display: flex;
         flex-direction: column;
@@ -401,8 +415,8 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     background-color: var(--bg-color-tabs-level-active);
     color: var(--font-color-tabs-level-active);
 }
-.tab-content{
-    margin-bottom: 4rem;
+.tab-content, .tab-content-ens{
+    margin-bottom: 3rem;
 }
 .tab-content, .tab-content-ens{
     background-color: var(--bg-color-tabs-level-active);
@@ -427,7 +441,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     align-items: center;
 }
 .deep-evolution img{
-    margin: 2rem auto;
+    margin: 2rem auto 3rem;
     width: 90%;
     max-width: 63rem;
     border-radius: 0.5rem;
@@ -446,7 +460,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 .gallery{
     width: 90%;
     height: auto;
-    margin: 5rem auto 6rem;
+    margin: 5rem auto 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,7 +525,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 
 @media screen and (min-width: 1000px) {
     .gallery{
-        margin: 4rem auto 0;
+        margin: 4rem auto 1rem;
         padding: 0 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, 30rem);
@@ -614,18 +628,18 @@ dialog h4{
 }
 nav.menu-modal{
     display: grid;
-    grid-template-columns: repeat(2, 20rem);
+    grid-template-columns: repeat(2, 45vw);
     justify-content: center;
     gap: 1rem;
     margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 nav button{
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: var(--main-font-color);
     font-size: 1.6rem;
     line-height: 1.6rem;
-    background-color: var(--main-bg-color);;
+    background-color: var(--main-bg-color);
     height: 3.2rem;
     border: none;
     border-radius: 1rem;

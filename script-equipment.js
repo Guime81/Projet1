@@ -14,6 +14,17 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
+// Scroll Down
+
+const down = document.querySelector(".down");
+const bubbles = document.querySelector(".bubble");
+
+down.addEventListener("click", () => {
+    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+let bannerHeight = document.querySelector("section.search").offsetHeight;
+    document.documentElement.scrollTop = bannerHeight - headerHeight;
+});
+
 
 // Scroll To Top
 
