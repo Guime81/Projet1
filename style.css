@@ -224,14 +224,14 @@ section.search{
     width: 5rem;
     height: 14.7rem;
     position: absolute;
-    top: 73vh;
+    top: 67vh;
     left: calc(50vw - (5rem / 2 ));
 }
 .search img:last-of-type{
     width: 3.5rem;
     height: 3.5rem;
     position: absolute;
-    top: 90vh;
+    top: 87vh;
     left: calc(50vw - (3.5rem / 2 ));
     cursor: pointer;
 }
@@ -250,8 +250,8 @@ main{
 .scroll-to-top{
     display: none;
     position: fixed;
-    bottom: 5rem;
-    right: 1rem;
+    bottom: 4rem;
+    right: 1.5rem;
     cursor: pointer;
 }
 .scroll-to-top img{
@@ -291,16 +291,19 @@ footer .social-link .fa{
 
 nav .sub-menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-nav .sub-menu-list{
+nav .sub-menu li{
     font-size: 1.6rem;
+    line-height: 3.2rem;
     color: var(--main-font-color);
     text-align: center;
-    height: 3.2rem;
-    padding: 0.5rem;
-    margin: 0 0.3rem 1rem 0.3rem;
+    height: 5rem;
+    margin: 0 0.3rem 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: var(--main-bg-color);
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 0.6rem;
@@ -347,7 +350,7 @@ nav .sub-menu-list:hover{
     margin-top: 1rem;
 }
 .presentation article{
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 @media screen and (min-width:1000px){
@@ -397,7 +400,7 @@ section.disp-active{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-section#diver p:first-of-type, section#teacher p:first-of-type{
+section p.diver, section p.teacher{
     margin: 1rem 3rem;
 }
 .tabs h4, .tabs-ens h4{
@@ -416,11 +419,9 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     color: var(--font-color-tabs-level-active);
 }
 .tab-content, .tab-content-ens{
-    margin-bottom: 3rem;
-}
-.tab-content, .tab-content-ens{
     background-color: var(--bg-color-tabs-level-active);
     padding: 2rem 3rem;
+    margin-bottom: 6rem;
 }
 .tab-content img, .tab-content-ens img{
     display: block;
@@ -441,7 +442,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
     align-items: center;
 }
 .deep-evolution img{
-    margin: 2rem auto 3rem;
+    margin: 2rem auto 6rem;
     width: 90%;
     max-width: 63rem;
     border-radius: 0.5rem;
@@ -460,7 +461,7 @@ section#diver p:first-of-type, section#teacher p:first-of-type{
 .gallery{
     width: 90%;
     height: auto;
-    margin: 5rem auto 3rem;
+    margin: 5rem auto 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,7 +633,7 @@ nav.menu-modal{
     justify-content: center;
     gap: 1rem;
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 nav button{
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;

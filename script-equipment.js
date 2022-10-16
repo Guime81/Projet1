@@ -39,7 +39,9 @@ window.addEventListener("scroll", () => {
 });
 
 scrollToTop.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
+    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+    let bannerHeight = document.querySelector("section.search").offsetHeight;
+    document.documentElement.scrollTop = bannerHeight - headerHeight;
 });
 
 
