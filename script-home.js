@@ -14,30 +14,32 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 
-// Scroll Down
+// Scroll Down to Main
 
 const down = document.querySelector(".down");
-const bubbles = document.querySelector(".bubble");
-
 down.addEventListener("click", () => {
-    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+    let headerHeight = document.querySelector("header").offsetHeight;
     let bannerHeight = document.querySelector("section.search").offsetHeight;
     document.documentElement.scrollTop = bannerHeight - headerHeight;
 });
 
-// Disparition Down and bubbles on scroll
-/*
+
+// Disparition arrowDown and bubbles on scroll
+
+const divBubble = document.querySelector("div.bubble-position")
 window.addEventListener("scroll", () => {
-    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
-    let bubblesPosition = bubbles.offsetTop;
-    if(window.scrollY > (bubblesPosition - headerHeight)){
-        bubbles.style.display="none";
-         down.style.display="none";
+    let headerHeight = document.querySelector("header").offsetHeight;
+    let divBubbleHeightTop = divBubble.offsetTop;
+    if(window.scrollY > (divBubbleHeightTop - headerHeight)){
+        divBubble.style.opacity="0";
+        divBubble.style.visibility="hidden";
+        divBubble.style.transition="visibility 0s linear 0.5s, opacity 0.6s linear";     
     } else {
-         bubbles.style.display="absolute";
-         down.style.display="absolute";
+        divBubble.style.opacity="1";
+        divBubble.style.visibility="visible"
+        divBubble.style.transition="opacity 0.6s linear";
     }    
-});*/
+});
 
 
 //Switch on - off Article welcome page
@@ -70,7 +72,7 @@ window.addEventListener("scroll", () => {
 });
 
 scrollToTop.addEventListener("click", () => {
-    let headerHeight = document.querySelector("header.header-flex").offsetHeight;
+    let headerHeight = document.querySelector("header").offsetHeight;
     let bannerHeight = document.querySelector("section.search").offsetHeight;
     document.documentElement.scrollTop = bannerHeight - headerHeight;
 });
