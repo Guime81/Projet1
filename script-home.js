@@ -13,6 +13,15 @@ burgerMenu.addEventListener("click", () =>{
     menu.classList.toggle("menu-list-active");
 });
 
+// Close Menu Burger on touch outside
+/*
+document.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if(e.target.id !== menu && e.target.id !== burgerMenu){
+        menu.classList.remove("menu-list-active");
+    }
+});*/
+
 
 // Scroll Down to Main
 
@@ -20,7 +29,7 @@ const down = document.querySelector(".down");
 down.addEventListener("click", () => {
     let headerHeight = document.querySelector("header").offsetHeight;
     let bannerHeight = document.querySelector("section.search").offsetHeight;
-    document.documentElement.scrollTop = bannerHeight - headerHeight;
+    window.scrollTo({ top: bannerHeight - headerHeight, behavior: 'smooth' });
 });
 
 
@@ -74,5 +83,6 @@ window.addEventListener("scroll", () => {
 scrollToTop.addEventListener("click", () => {
     let headerHeight = document.querySelector("header").offsetHeight;
     let bannerHeight = document.querySelector("section.search").offsetHeight;
-    document.documentElement.scrollTop = bannerHeight - headerHeight;
+    //document.documentElement.scrollTop = bannerHeight - headerHeight;
+    window.scrollTo({ top: bannerHeight - headerHeight, behavior: 'smooth' });
 });

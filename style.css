@@ -469,6 +469,12 @@ section p.diver, section p.teacher{
 
 /* ******** Equipment Page ******** */
 
+.equipfigure img{
+    display: block;
+    margin: 4rem auto;
+    width: 90vw;
+    max-width: 90rem;
+}
 .gallery{
     width: 90%;
     height: auto;
