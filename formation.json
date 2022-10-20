@@ -1,0 +1,129 @@
+[
+  { 
+    "activité": "Niveau 1", 
+    "date": "Janvier",
+    "milieu": "Carrière",
+    "lieu" : "Bécon-Les-Granit"
+  },
+
+  { 
+    "activité": "Niveau 2", 
+    "date": "Mai",
+    "milieu": "Mer",
+    "lieu" : "Banyuls"
+  },
+
+  { 
+    "activité": "Niveau 3", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Trébeurden"
+  },
+
+  { 
+    "activité": "Niveau 4", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Trébeurden"
+  },
+
+  { 
+    "activité": "Initiateur", 
+    "date": "Avril",
+    "milieu": "Piscine",
+    "lieu" : "Le Mans"
+  },
+
+  { 
+    "activité": "MF1", 
+    "date": "Juillet",
+    "milieu": "Mer",
+    "lieu" : "Niolon"
+  },
+
+  { 
+    "activité": "MF2", 
+    "date": "Septembre",
+    "milieu": "Mer",
+    "lieu" : "Hendaye"
+  },
+
+  { 
+    "activité" : "Plongée", 
+    "date" : "Juin",
+    "milieu": "Carrière",
+    "lieu" : "Bécon-Les-Granits"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Mai",
+    "milieu": "Carrière",
+    "lieu" : "Bécon-Les-Granits"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Août",
+    "milieu": "Carrière",
+    "lieu" : "Bécon-Les-Granits"
+  },
+  
+  { 
+    "activité": "Plongée", 
+    "date": "Novembre",
+    "milieu": "Carrière",
+    "lieu" : "Bécon-Les-Granits"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Prequ'île de Crozon"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Prequ'île de Crozon"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Août",
+    "milieu": "Mer",
+    "lieu" : "Lorient"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Archipel des Glénan"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Octobre",
+    "milieu": "Mer",
+    "lieu" : "Prequ'île de Crozon"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Port-Cros"
+  },
+
+  { 
+    "activité": "Plongée", 
+    "date": "Juin",
+    "milieu": "Mer",
+    "lieu" : "Ile d'Yeu"
+  }
+
+]
+

@@ -33,6 +33,7 @@ body{
     margin: 0 auto;
     background-color: #e0dddd;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
 }
 p{
     color: #202238;
@@ -83,6 +84,9 @@ header{
     top: 0;
     right:0;
     left:0;
+}
+    header.sticky-mode{
+    position: sticky; 
 }
 header .logo{
     display: block;
@@ -157,14 +161,9 @@ header .title .min-size{
     right: -100vw;
     width: 100vw;
     transition: 1s ease;
-    /*right: 0;
-    width: 0;*/
-    /*modifier menu en ul li et display flex...*/
 }
 .menu-list-active{
-    right: 0;
-    /*width: 100vw*/
-    
+    right: 0;    
 }
 @media screen and (min-width:1000px){
     header .logo{

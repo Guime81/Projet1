@@ -83,6 +83,5 @@ window.addEventListener("scroll", () => {
 scrollToTop.addEventListener("click", () => {
     let headerHeight = document.querySelector("header").offsetHeight;
     let bannerHeight = document.querySelector("section.search").offsetHeight;
-    //document.documentElement.scrollTop = bannerHeight - headerHeight;
     window.scrollTo({ top: bannerHeight - headerHeight, behavior: 'smooth' });
 });
