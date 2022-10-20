@@ -14,13 +14,15 @@ burgerMenu.addEventListener("click", () =>{
 });
 
 // Close Menu Burger on touch outside
-/*
+
 document.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if(e.target.id !== menu && e.target.id !== burgerMenu){
-        menu.classList.remove("menu-list-active");
+    if(e.target.id !== "menu" && e.target.id !== "burger-menu" && e.target.id !== "bar1" && e.target.id !== "bar2" && e.target.id !== "bar3"){
+    menu.classList.remove("menu-list-active");
+    bar1.classList.remove("rotation");
+    bar2.classList.remove("disparition");
+    bar3.classList.remove("rotation2");
     }
-});*/
+});
 
 
 // Scroll Down to Main

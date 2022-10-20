@@ -158,8 +158,8 @@ header .title .min-size{
     background-image: url("medias/menuburger.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    right: -100vw;
-    width: 100vw;
+    right: -100%;
+    width: 100%;
     transition: 1s ease;
 }
 .menu-list-active{
