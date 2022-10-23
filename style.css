@@ -138,7 +138,7 @@ header .title .min-size{
 }
 .menu-list a{
     display: block;
-    color: #fff;
+    color: #000;
     font-size: calc(2.5rem + 3vw);
     text-align: center;
     padding: 1.5rem;
