@@ -13,6 +13,7 @@ burgerMenu.addEventListener("click", () =>{
     menu.classList.toggle("menu-list-active");
 });
 
+
 // Close Menu Burger on touch outside
 
 document.addEventListener("click", (e) => {
